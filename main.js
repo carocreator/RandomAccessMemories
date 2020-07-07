@@ -203,7 +203,7 @@ function loadNextQuestion() {
             a memory dealer.
             </p>
         </div>
-        <button id="generate-ram-button"><a href="../pages/ram.html">Generate RAM</a></button>
+        <button id="generate-ram-button"><a href="./pages/ram.html">Generate RAM</a></button>
         <button class="restart" id="generate-ram-button">Restart Quiz</button>`;
     return;
   }
