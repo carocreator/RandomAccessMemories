@@ -1,0 +1,197 @@
+/*CSS for QUIZ FUNCTION*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto";
+  color: white;
+  background-image: url("../images/palm7.jpg");
+}
+
+footer {
+  font-size: 1.5rem;
+  margin-left: 20px;
+  margin-top: 30px;
+  color: violet;
+}
+
+p {
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.quiz-container {
+  width: 85%;
+  margin: 100px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/palm2.jpg");
+  /*min-height: 100vh;*/
+}
+
+.title {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 4.5rem;
+  text-align: left;
+}
+
+.question {
+  margin: 15px;
+  font-size: 1.5rem;
+}
+
+.introduction {
+  font-size: 1rem;
+}
+
+.option {
+  padding: 1rem;
+  margin: 10px;
+  color: rgb(131, 107, 240);
+  background: violet;
+  width: 90%;
+  border-radius: 1px;
+  transition: all 2s;
+}
+
+.option:hover {
+  background: rgb(104, 19, 161);
+}
+
+.option input:checked .option {
+  background: black;
+  color: black;
+}
+
+.controls > * {
+  margin: 1rem;
+}
+
+button {
+  font-family: "Roboto";
+  padding: 0.5rem 1.5rem;
+  border: none;
+  box-shadow: 0 0 0 1px rgba(8, 24, 168, 0.1);
+  border-radius: 1px;
+  color: white;
+  outline: none;
+  transform: scale(0.98);
+  transition: all 0.2s;
+}
+
+button.previous {
+  font-family: "Roboto";
+  background: violet;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+button.next {
+  font-family: "Roboto";
+  background: violet;
+  font-size: 1.5rem;
+}
+
+button.restart {
+  font-family: "Roboto";
+  background: violet;
+  color: black;
+  font-size: 2rem;
+  margin: 10px;
+  transition: all 0.4s;
+}
+
+button.restart:hover {
+  color: #00000098;
+}
+
+button:hover,
+button:focus {
+  transform: scale(1);
+  font-weight: 500;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  line-height: 1.7rem;
+  min-height: 100vh;
+  font-size: 5rem;
+}
+
+.final-score {
+  color: white;
+}
+
+.summary {
+  font-size: 1rem;
+  text-shadow: 1px 1px #8b138f50;
+  color: white;
+  background: rgba(25, 1, 92, 0.5);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+  margin-top: 70px;
+}
+
+.summary h1 {
+  align-self: center;
+}
+
+/*CSS for RAM FUNCTION*/
+#generate-ram-button {
+  font-family: "Roboto";
+  background: violet;
+  color: white;
+  font-size: 2rem;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+/*CSS for RAM SUBPAGE*/
+
+h1 {
+  margin: 20px;
+}
+.ram-summary {
+  font-size: 1rem;
+  text-shadow: 1px 1px #8b138f50;
+  line-height: 1.7rem;
+  color: white;
+  background: rgba(25, 1, 92, 0.5);
+  margin: 100px;
+  padding: 20px;
+}
+
+#footer-button {
+  font-family: "Roboto";
+  background: violet;
+  color: white;
+  font-size: 2rem;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Random Access Memories</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <div class="ram-summary">
+        <div>
+            <button class="randomize" id="generate-ram-button">Generate RAM</button>
+            <p class="story" id="haiku">REMEMBER...</p>
+        </div>
+
+    </div>
+
+    <div class="ram-summary">
+            <p> Disappointed?<br> 
+                Yes, these memories are random.<br>  
+                But isn’t that what you wanted?<br> 
+                Yes, these memories are not very specific or not even you.<br> 
+                But at the end of the day all memories boil down to a canon of firsts and lasts,<br>  
+                to all the things our world considers memorable. <br> 
+                And this is what I provide you with: events worth remembering. <br> 
+                Don’t fill your brain with unimportant impressions from the past. <br> 
+                Even if they are solely yours. <br> 
+                Memories have become a currency. <br> 
+                Their sentimental value gets bigger the more people can identify with it. <br> 
+                <br><br> 
+                And by the way:<br> 
+                The jungle is life.<br> 
+                The water is sex.<br> 
+                The wall is death.<br> 
+                </p>
+    </div>
+    <script>
+      var randomize = document.querySelector(".randomize");
+      var story = document.querySelector(".story");
+      function randomValueFromArray(array) {
+        return array[Math.floor(Math.random() * array.length)];
+      }
+
+      // RAW TEXT STRINGS
+      var storyText = ("REMEMBER...  :insertv:  //  :insertw:  //  :insertx:  //  :inserty:  //  :insertz:");
+      var insertV = ["the first time you fell in love with a cheesy pop song.",
+                    "when you lied about liking Twin Peaks.",
+                    "the first time you shat in a public toilet.",
+                    "when you had a sandwich on a bench in New York.",
+                    "when you were ashamed of having an espresso from an aluminum capsule.",
+                    "the first time you stroked your totem animal.",
+                    "that time when you read “Simulacra and Simulation” because you thought it would explain you the plot of Matrix.",
+                    ];
+      var insertW = ["… when your house pig died after drinking too much coffee.",
+                    "… when Penthesilea liked your shoes.",
+                    "… when you were waiting to meet Baudrillard in Disneyland and instead of him Woody Allen showed up.",
+                    "… when you fought the Vietcong and started to get into Richard Wagner’s oeuvre.",
+                    "… when you were a Nazi and started to get into Richard Wagner’s oeuvre.",
+                    "… the first time you won a war.",
+                    "… when you opened up a history book and inside was a picture of you.",
+                    ];
+      var insertX = ["… that day you finished building the atomic bomb and after washing your hands having coffee from an aluminum capsule.",
+                    "… when you listened to a pop song thinking this must be life.",
+                    "… when you listened to a pop song thinking this is worse than death.",
+                    "… when you wanted to poison your son but actually poisoned Gertrud or Getraud or Gertrude.",
+                    "… Stellaaaa!",
+                    "… when someone hacked your amazon account and ordered a spice rack with your credit card details. And a French Press.",
+                    ];
+      var insertY = ["… when a French guy explained to you hyperreality and you thought ‘My French is really good,’ but he actually spoke English.",
+                    "… last time you met a guy with sunglasses offering you a red and a blue pill.",
+                    "… last time you ate an animal.",
+                    "… when you’ve found out your mother has a first name too.",
+                    "… what you did on the tube before you had a smartphone?",
+                    "… your first memory.",
+                    "… trying to remember forward in time.",
+                    ];
+      var insertZ = ["… when the future was a promising concept of never-ending improvements?",
+                    "… what you did on 9/11?",
+                    "… what you did for each of your birthdays?",
+                    "… the things you keep forcing yourself to forget?",
+                    "… all stops on your way to work?",
+                    "… the answers to your security question?",
+                    "… life?",
+                    ];
+
+      // EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
+      function haiku() {
+        var newStory = storyText;
+        var vItem = randomValueFromArray(insertV);
+        var wItem = randomValueFromArray(insertW);
+        var xItem = randomValueFromArray(insertX);
+        var yItem = randomValueFromArray(insertY);
+        var zItem = randomValueFromArray(insertZ);
+
+        newStory = newStory
+          .replace(/:insertv:/g, vItem)
+          .replace(/:insertw:/g, wItem)
+          .replace(/:insertx:/g, xItem)
+          .replace(/:inserty:/g, yItem)
+          .replace(/:insertz:/g, zItem);
+
+        story.textContent = newStory;
+        story.style.visibility = "visible";
+      }
+
+      randomize.addEventListener("click", haiku);
+    </script>
+  </body>
+
+  <footer>
+    </div>
+    <button id="footer-button">
+    <a href="https://2kqyz.csb.app/">Restart Quiz</a>
+    </button>
+</div>
+    <div>
+        <a href="https://en.wikipedia.org/wiki/Random_Access_Memories">Exit to real internet</a>
+      </div>
+    <script src="ram.js"></script>
+  </footer>
+</html>
