@@ -196,8 +196,8 @@ function loadNextQuestion() {
          <div class="summary">
             <p>I wake up. </br>
             I’m not sure if the wolf tricked me with that test.</br> 
-            Feels like he stole everything that makes me me 
-            and put me in his mysterious forest</br> 
+            Feels like they stole everything that makes me me 
+            and put me in their mysterious forest</br> 
             reselling my story to other people 
             who are stupid enough to have themselves talked into a personality test by a wolf or:</br> 
             a memory dealer.
